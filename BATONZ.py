@@ -179,7 +179,7 @@ def google_sheets_append(df):
     from oauth2client.service_account import ServiceAccountCredentials  
     # Google スプレッドシートにアクセスするための認証情報
     SCOPES = ['https://www.googleapis.com/auth/spreadsheets','https://www.googleapis.com/auth/drive']
-    SERVICE_ACCOUNT_FILE = 'my-project-test-420412-0af5cbd80b89.json'
+    SERVICE_ACCOUNT_FILE = ''
     credentials = ServiceAccountCredentials.from_json_keyfile_name(SERVICE_ACCOUNT_FILE, SCOPES)
     gs = gspread.authorize(credentials)
 
